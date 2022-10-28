@@ -26,7 +26,7 @@ const AppThemeProvider = ({ children }) => {
                         dark: '#dee2e5'
                     },
                     secondary: {
-                        main: '#264272'
+                        main: '#6261bd'
                     },
                     otherColors: {
                         white: '#ffffff',
@@ -45,12 +45,13 @@ const AppThemeProvider = ({ children }) => {
                         dark: '#ffffff'
                     },
                     secondary: {
-                        main: '#264272'
+                        main: '#6261bd'
                     },
                     otherColors: {
                         white: '#ffffff',
                         black: '#000000',
-                        action: '#EF4F4F'
+                        action: '#EF4F4F',
+                        gray: '#d4d4d4'
                     },
                     typography: {
                         fontFamily: 'Gruppo',

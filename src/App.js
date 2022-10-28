@@ -1,10 +1,15 @@
 import { AppRoutes } from "./routes";
+import { Box } from '@mui/material';
 
 const App = () => {
   return (
-    <div>
+    <Box
+      sx={{
+        backgroundColor: 'primary.light',
+        height: '100vh'
+      }}>
       <AppRoutes />
-    </div>
+    </Box>
   );
 }
 

@@ -1,10 +1,11 @@
 import { Box } from '@mui/material';
-import { Header } from "../../components/";
+import { Header, HomePageComp } from "../../components/";
 
 const HomePage = () => {
   return (
     <Box>
       <Header />
+      <HomePageComp.IntroSection />
     </Box>
   );
 }

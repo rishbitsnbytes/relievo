@@ -15,3 +15,9 @@ export const headerIcon = {
     color: 'otherColors.action',
     cursor: 'pointer'
 }
+
+export const typographyStyle = {
+    color: 'otherColors.action',
+    fontFamily: 'Gruppo',
+    fontWeight: 'bold',
+}
