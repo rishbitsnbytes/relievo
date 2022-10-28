@@ -1,5 +1,12 @@
+import { Box } from '@mui/material';
+import { Header } from "../../components/";
+
 const HomePage = () => {
-  return <div>relievo Homepage!!</div>;
-};
+  return (
+    <Box>
+      <Header />
+    </Box>
+  );
+}
 
 export { HomePage };
