@@ -12,7 +12,7 @@ const IntroSection = () => {
     return (
         <Box
             sx={{
-                padding: '6rem 3rem 2rem 3rem',
+                padding: '6rem 3rem 6rem 3rem',
                 display: 'flex',
                 justifyContent: 'space-around'
             }}>

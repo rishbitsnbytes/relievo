@@ -21,3 +21,9 @@ export const typographyStyle = {
     fontFamily: 'Gruppo',
     fontWeight: 'bold',
 }
+
+export const landingPageSubsectionHeading = {
+    color: 'secondary.main',
+    fontSize: '1.5rem',
+    textAlign: 'center'
+}
