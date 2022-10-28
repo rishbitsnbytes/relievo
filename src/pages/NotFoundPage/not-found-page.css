@@ -1,0 +1,13 @@
+.main-not-found {
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.main-not-found img {
+    width: 30%;
+    height: 30%;
+}
