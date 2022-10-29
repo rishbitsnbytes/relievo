@@ -3,6 +3,7 @@ import App from "./App";
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { BrowserRouter as Router } from "react-router-dom";
+import { CombinedProvider } from "./providers/CombinedProvider";
 import { AppThemeProvider } from "./providers/RelievoThemeProvider";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
@@ -10,7 +11,9 @@ root.render(
   <React.StrictMode>
     <Router>
       <AppThemeProvider>
-        <App />
+        <CombinedProvider>
+          <App />
+        </CombinedProvider>
       </AppThemeProvider>
     </Router>
   </React.StrictMode>

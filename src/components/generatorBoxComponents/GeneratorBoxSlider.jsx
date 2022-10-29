@@ -17,6 +17,7 @@ const GeneratorBoxSlider = ({ sliderLabel }) => {
                 defaultValue={70}
                 sx={{ width: '10rem' }}
             />
+            {70}
         </label>
     );
 }

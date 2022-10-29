@@ -84,7 +84,7 @@ export const generatorBoxSubsectionHeading = {
     borderRadius: 1,
     color: 'otherColors.gray',
     textAlign: 'center',
-    mb: 1,
+    mb: 1.5,
     mt: 1
 }
 
