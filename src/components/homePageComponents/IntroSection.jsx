@@ -12,22 +12,27 @@ const IntroSection = () => {
     return (
         <Box
             sx={{
-                padding: '6rem 3rem 6rem 3rem',
+                alignItems: 'center',
                 display: 'flex',
-                justifyContent: 'space-around'
+                flexDirection: { xs: 'column-reverse', md: 'row' },
+                flexGrow: 0,
+                justifyContent: 'space-around',
+                gap: { xs: 10, md: 2 },
+                padding: { xs: '4rem 0.5rem 6rem 0.5rem', sm: '6rem 2rem 6rem 2rem', lg: '6rem 3rem 6rem 3rem' },
             }}>
             <Box
                 sx={{
-                    alignItems: 'flex-start',
+                    alignItems: { xs: 'center', md: 'flex-start' },
                     display: 'flex',
                     justifyContent: 'center',
                     flexDirection: 'column',
-                    pl: '4rem'
+                    pl: { xs: '1rem', lg: '4rem' },
                 }}>
                 <Typography
                     sx={{
                         ...typographyStyle,
-                        fontSize: '1.5rem',
+                        fontSize: { xs: '1.3rem', sm: '1.5rem' },
+                        textAlign: { xs: 'center', md: 'left' }
                     }}>
                     {introText.highlightedText}
                     <Typography
@@ -36,7 +41,7 @@ const IntroSection = () => {
                             color: 'otherColors.gray',
                             display: 'inline-block',
                             fontWeight: 'light',
-                            fontSize: '1.1rem'
+                            fontSize: { xs: '1rem', sm: '1.1rem' }
                         }}>
                         {introText.normalText}
                     </Typography>
@@ -56,7 +61,7 @@ const IntroSection = () => {
                     component='img'
                     src={mainImage}
                     sx={{
-                        width: { xs: 200, sm: 500 }
+                        width: { xs: 300, md: 400, lg: 500 }
                     }} />
             </Box>
         </Box>

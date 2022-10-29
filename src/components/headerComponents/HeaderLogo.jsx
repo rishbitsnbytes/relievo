@@ -8,7 +8,7 @@ const HeaderLogo = () => {
                 component='img'
                 src={logo}
                 sx={{
-                    width: { xs: 60, sm: 120 }
+                    width: 120
                 }} />
         </Link>
     );
