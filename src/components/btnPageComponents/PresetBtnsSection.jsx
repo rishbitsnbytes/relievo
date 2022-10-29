@@ -8,7 +8,7 @@ import { typographyStyle, scrollbarStyling } from "../../utils/commonStyles";
 const PresetBtnsSection = () => {
   const [isHovering, setIsHovering] = useState(false);
   const [hoverElementId, setHoverElementId] = useState("");
-  const { btnState, btnDispatch } = useBtn();
+  const { btnDispatch } = useBtn();
 
   const handleBtnChange = (button) => {
     btnDispatch({

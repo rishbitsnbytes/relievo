@@ -25,6 +25,7 @@ const BtnCompPreviewBox = () => {
         payload: "#212121",
       });
     }
+    // eslint-disable-next-line
   }, [mode]);
 
   const handleMouseEnter = (e) => {
