@@ -1,6 +1,7 @@
+import { typographyStyle } from "../../utils/commonStyles";
 import { Box, Typography, Button } from '@mui/material';
 import mainImage from "../../assets/mainImage.svg";
-import { typographyStyle } from "../../utils/commonStyles";
+import { useNavigate } from 'react-router';
 
 const IntroSection = () => {
 
@@ -8,6 +9,8 @@ const IntroSection = () => {
         highlightedText: "A Dynamic Component Library ",
         normalText: " which relieves developer's pain related to component UI Building!!"
     }
+
+    const navigate = useNavigate();
 
     return (
         <Box
@@ -31,6 +34,7 @@ const IntroSection = () => {
                 <Typography
                     sx={{
                         ...typographyStyle,
+                        color: 'otherColors.action',
                         fontSize: { xs: '1.3rem', sm: '1.5rem' },
                         textAlign: { xs: 'center', md: 'left' }
                     }}>
@@ -52,7 +56,8 @@ const IntroSection = () => {
                         mt: 2,
                         color: 'secondary.main',
                         border: '1px solid'
-                    }}>
+                    }}
+                    onClick={() => navigate('/btn')}>
                     Get Started
                 </Button>
             </Box>

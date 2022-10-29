@@ -31,7 +31,8 @@ const AppThemeProvider = ({ children }) => {
                     otherColors: {
                         white: '#ffffff',
                         black: '#000000',
-                        action: '#EF4F4F'
+                        action: '#EF4F4F',
+                        gray: '#1a1a24'
                     },
                     typography: {
                         fontFamily: 'Gruppo',
