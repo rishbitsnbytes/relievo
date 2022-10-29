@@ -34,6 +34,7 @@ const IntroSection = () => {
                 <Typography
                     sx={{
                         ...typographyStyle,
+                        color: 'otherColors.action',
                         fontSize: { xs: '1.3rem', sm: '1.5rem' },
                         textAlign: { xs: 'center', md: 'left' }
                     }}>
