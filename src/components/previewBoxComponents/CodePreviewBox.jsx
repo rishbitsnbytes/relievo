@@ -1,5 +1,5 @@
 import ContentCopyIcon from "@mui/icons-material/ContentCopy";
-import { Box, TextField, Typography } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 import CheckCircleIcon from "@mui/icons-material/CheckCircle";
 import {
   codePreviewBoxes,
@@ -11,7 +11,7 @@ import { useBtn } from "contexts";
 import { useState } from "react";
 
 const CodePreviewBox = ({ boxHeading }) => {
-  const { btnState, btnDispatch } = useBtn();
+  const { btnState } = useBtn();
   const [isCopied, setIsCopied] = useState(false);
 
   const handleCopy = (e) => {
