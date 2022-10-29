@@ -1,13 +1,6 @@
-import ContentCopyIcon from '@mui/icons-material/ContentCopy';
-import { Box, Typography } from '@mui/material';
-import { Header } from "../../components/";
-import {
-    contentSectionScollbarStyle,
-    typographyStyle,
-    previewBox,
-    codePreviewBoxes,
-    copyIcon
-} from "../../utils/commonStyles";
+import { Box } from '@mui/material';
+import { contentSectionScollbarStyle, } from "../../utils/commonStyles";
+import { Header, BtnComp, previewComp, GeneratorBox } from "../../components/";
 
 const BtnGeneratorPage = () => {
     return (
@@ -19,52 +12,21 @@ const BtnGeneratorPage = () => {
                     display: 'flex',
                     padding: 2
                 }}>
+                <BtnComp.PresetBtnsSection />
 
-                <Box
-                    sx={{
-                        backgroundColor: 'primary.main',
-                        borderRadius: 1,
-                        p: 1,
-                        width: '12rem'
-                    }}>
-                    <Typography
-                        sx={{
-                            ...typographyStyle,
-                            color: 'secondary.main',
-                            fontSize: '1.1rem',
-                            textAlign: 'center'
-                        }}>
-                        Preset Buttons
-                    </Typography>
-                </Box>
-
-                <Box sx={{ flexGrow: 1, height: '100%' }}>
-
-                    <Typography
-                        sx={{
-                            ...typographyStyle,
-                            color: 'otherColors.gray',
-                            fontSize: '1.4rem',
-                            textAlign: 'center'
-                        }}>
-                        Button Generator
-                    </Typography>
-
-                    <Box sx={{ width: '65%', height: '100%', p: '1.1rem 2rem' }}>
-                        <Box sx={previewBox}>
-                            Preview
-                        </Box>
-                        <Box sx={{ display: 'flex', gap: 1, p: '1rem 0rem', height: '50%' }}>
-                            <Box sx={codePreviewBoxes}>
-                                <ContentCopyIcon sx={copyIcon} />
-                                HTML
-                            </Box>
-                            <Box sx={codePreviewBoxes}>
-                                <ContentCopyIcon sx={copyIcon} />
-                                CSS
+                <Box sx={{ display: 'flex', flexGrow: 1, height: '100%' }}>
+                    <Box sx={{ flexGrow: 1 }}>
+                        <BtnComp.BtnPageHeading />
+                        <Box sx={{ width: '100%', height: '100%', p: '1.1rem 2rem' }}>
+                            <previewComp.BtnCompPreviewBox />
+                            <Box sx={{ display: 'flex', gap: 1, p: '1rem 0rem', height: '50%' }}>
+                                <previewComp.CodePreviewBox boxHeading="HTML" />
+                                <previewComp.CodePreviewBox boxHeading="CSS" />
                             </Box>
                         </Box>
                     </Box>
+
+                    <GeneratorBox />
                 </Box>
             </Box>
         </Box>

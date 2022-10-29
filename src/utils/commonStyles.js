@@ -54,6 +54,7 @@ export const previewBox = {
     borderRadius: 1,
     justifyContent: 'center',
     height: '50%',
+    position: 'relative'
 }
 
 export const codePreviewBoxes = {
