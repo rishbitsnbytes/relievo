@@ -1,0 +1,1 @@
+export { btnsData } from "./btnsData";

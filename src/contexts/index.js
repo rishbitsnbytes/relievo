@@ -1,1 +1,1 @@
-export { useBtn, BtnProvider } from "./btn-context";
+export { useBtn, BtnProvider, initialBtnState } from "./btn-context";
