@@ -1,14 +1,19 @@
+import { BtnGenerators } from "./";
+import { useLocation } from "react-router";
 import { Box, Typography } from '@mui/material';
 import { scrollbarStyling, typographyStyle } from "../../utils/commonStyles";
 
 const GeneratorBox = () => {
+
+    const location = useLocation();
+
     return (
         <Box
             sx={{
                 backgroundColor: 'primary.main',
                 borderRadius: 1,
                 minWidth: '20rem',
-                p: 1,
+                p: '0.5rem 1.5rem',
                 overflowY: 'scroll',
                 ...scrollbarStyling
             }}>
@@ -21,7 +26,11 @@ const GeneratorBox = () => {
                 }}>
                 Generator
             </Typography>
-            
+            {
+                location?.pathname === "/btn" ?
+                    <BtnGenerators /> :
+                    ""
+            }
         </Box>
     );
 }

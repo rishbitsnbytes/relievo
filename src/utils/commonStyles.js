@@ -77,3 +77,29 @@ export const copyIcon = {
         color: 'secondary.main'
     }
 }
+
+export const generatorBoxSubsectionHeading = {
+    ...typographyStyle,
+    background: 'rgba(98, 97, 189, 0.3)',
+    borderRadius: 1,
+    color: 'otherColors.gray',
+    textAlign: 'center',
+    mb: 1,
+    mt: 1
+}
+
+export const generatorBoxSubsectionInputContainer = {
+    display: 'flex',
+    flexDirection: 'column',
+    gap: 1
+}
+
+export const generatorBoxTextField = {
+    width: '100%',
+    input: {
+        borderTopLeftRadius: 1,
+        borderTopRightRadius: 1,
+        color: 'otherColors.gray',
+        ...typographyStyle,
+    }
+}
