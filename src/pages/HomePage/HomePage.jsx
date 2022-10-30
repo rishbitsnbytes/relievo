@@ -8,6 +8,7 @@ const HomePage = () => {
       <Header />
       <Box sx={contentSectionScollbarStyle}>
         <HomePageComp.IntroSection />
+        <HomePageComp.Features />
         <HomePageComp.Installation />
         <HomePageComp.CodeSnippet />
         <Box>
@@ -17,8 +18,8 @@ const HomePage = () => {
               color: 'otherColors.gray',
               fontSize: '1.2rem',
               textAlign: 'center',
-              pt: 2,
-              pb: 2
+              pt: 4,
+              pb: 4
             }}>
             2022 @ copyright || All rights reserved
           </Typography>

@@ -103,3 +103,60 @@ export const generatorBoxTextField = {
         ...typographyStyle,
     }
 }
+
+export const homePagesubsectionOuterContainer = {
+    alignItems: 'center',
+    display: 'flex',
+    flexDirection: { xs: 'column-reverse', md: 'row' },
+    flexGrow: 0,
+    justifyContent: 'space-around',
+    gap: { xs: 10, md: 2 },
+    padding: { xs: '4rem 0.5rem 6rem 0.5rem', sm: '6rem 2rem 6rem 2rem', lg: '6rem 3rem 6rem 3rem' },
+}
+
+export const homePagesubsectionInnerContainer = {
+    alignItems: { xs: 'center', md: 'flex-start' },
+    display: 'flex',
+    justifyContent: 'center',
+    flexDirection: 'column',
+    pl: { xs: '1rem', lg: '4rem' }
+}
+
+export const hompageSubsectionHighlightedTypography = {
+    ...typographyStyle,
+    color: 'otherColors.action',
+    fontSize: { xs: '1.3rem', sm: '1.5rem' },
+    textAlign: { xs: 'center', md: 'left' }
+}
+
+export const hompageSubsectionNormalTypography = {
+    ...typographyStyle,
+    color: 'otherColors.gray',
+    display: 'inline-block',
+    fontWeight: 'light',
+    fontSize: { xs: '1rem', sm: '1.1rem' }
+}
+
+export const homepageSubsectionNestedBox = {
+    alignItems: 'center',
+    width: { xs: '90%', md: '70%' },
+    display: 'flex',
+    justifyContent: 'flex-end',
+    gap: { xs: 5, md: 10 },
+    p: 1,
+    pb: '3rem'
+}
+
+export const featureBox = {
+    border: '4px solid #EF4F4F',
+    borderRadius: '50%',
+    cursor: 'pointer',
+    ...flexCenter,
+    justifyContent: 'center',
+    width: { xs: '7rem', md: '10rem' },
+    height: { xs: '7rem', md: '10rem' },
+    '&:hover': {
+        boxShadow: '0px 0px 5px 1px #EF4F4F'
+    }
+}
+

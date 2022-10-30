@@ -1,4 +1,9 @@
-import { typographyStyle } from "../../utils/commonStyles";
+import {
+    homePagesubsectionOuterContainer,
+    homePagesubsectionInnerContainer,
+    hompageSubsectionHighlightedTypography,
+    hompageSubsectionNormalTypography
+} from "../../utils/commonStyles";
 import { Box, Typography, Button } from '@mui/material';
 import mainImage from "../../assets/mainImage.svg";
 import { useNavigate } from 'react-router';
@@ -13,40 +18,11 @@ const IntroSection = () => {
     const navigate = useNavigate();
 
     return (
-        <Box
-            sx={{
-                alignItems: 'center',
-                display: 'flex',
-                flexDirection: { xs: 'column-reverse', md: 'row' },
-                flexGrow: 0,
-                justifyContent: 'space-around',
-                gap: { xs: 10, md: 2 },
-                padding: { xs: '4rem 0.5rem 6rem 0.5rem', sm: '6rem 2rem 6rem 2rem', lg: '6rem 3rem 6rem 3rem' },
-            }}>
-            <Box
-                sx={{
-                    alignItems: { xs: 'center', md: 'flex-start' },
-                    display: 'flex',
-                    justifyContent: 'center',
-                    flexDirection: 'column',
-                    pl: { xs: '1rem', lg: '4rem' },
-                }}>
-                <Typography
-                    sx={{
-                        ...typographyStyle,
-                        color: 'otherColors.action',
-                        fontSize: { xs: '1.3rem', sm: '1.5rem' },
-                        textAlign: { xs: 'center', md: 'left' }
-                    }}>
+        <Box sx={homePagesubsectionOuterContainer}>
+            <Box sx={homePagesubsectionInnerContainer}>
+                <Typography sx={hompageSubsectionHighlightedTypography}>
                     {introText.highlightedText}
-                    <Typography
-                        sx={{
-                            ...typographyStyle,
-                            color: 'otherColors.gray',
-                            display: 'inline-block',
-                            fontWeight: 'light',
-                            fontSize: { xs: '1rem', sm: '1.1rem' }
-                        }}>
+                    <Typography sx={hompageSubsectionNormalTypography}>
                         {introText.normalText}
                     </Typography>
                 </Typography>
