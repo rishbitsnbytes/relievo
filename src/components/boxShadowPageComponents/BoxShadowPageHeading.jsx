@@ -1,7 +1,7 @@
 import { Typography } from "@mui/material";
 import { typographyStyle } from "../../utils/commonStyles";
 
-const BtnPageHeading = () => {
+const BoxShadowPageHeading = () => {
   return (
     <Typography
       sx={{
@@ -11,9 +11,9 @@ const BtnPageHeading = () => {
         textAlign: "center",
       }}
     >
-      Button Generator
+      Box Shadow Generator
     </Typography>
   );
 };
 
-export { BtnPageHeading };
+export { BoxShadowPageHeading };
