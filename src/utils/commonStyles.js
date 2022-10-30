@@ -11,7 +11,7 @@ export const flexSpaceAround = {
 }
 
 export const headerIcon = {
-    fontSize: '2rem',
+    fontSize: { xs: '1.5rem', md: '2rem' },
     color: 'otherColors.action',
     cursor: 'pointer'
 }

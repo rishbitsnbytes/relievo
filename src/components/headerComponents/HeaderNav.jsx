@@ -13,7 +13,7 @@ const HeaderNav = () => {
         <Box
             sx={{
                 ...flexSpaceAround,
-                gap: '2rem'
+                gap: { xs: '1rem', md: '2rem' }
             }}
             onClick={() => toggleTheme()}
         >

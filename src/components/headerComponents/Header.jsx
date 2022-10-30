@@ -10,13 +10,13 @@ const Header = () => {
             backgroundColor: 'primary.main',
             ...flexCenter,
             height: '10vh',
-            padding: '0rem 1.5rem 0rem 1.5rem',
+            padding: { xs: '0rem 0.5rem', md: '0rem 1.5rem 0rem 1.5rem' },
         }}>
             <Box
                 sx={{
                     alignItems: 'center',
                     display: 'flex',
-                    gap: 3
+                    gap: { xs: 1, md: 3 }
                 }}>
                 <HeaderHamburgerMenu />
                 <HeaderLogo />
