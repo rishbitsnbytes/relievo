@@ -16,7 +16,7 @@ const HomePage = () => {
             sx={{
               fontFamily: 'Gruppo',
               color: 'otherColors.gray',
-              fontSize: '1.2rem',
+              fontSize: { xs: '1rem', md: '1.2rem' },
               textAlign: 'center',
               pt: 4,
               pb: 4
