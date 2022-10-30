@@ -56,7 +56,7 @@ const BoxShadowCodePreviewBox = ({ boxHeading }) => {
           ? `<div class="myBox" >${boxShadowState?.boxText}</div>`
           : boxHeading === "CSS"
           ? `.myBox {
-            box-shadow: ${boxShadowState?.boxShadow?.vertical}px ${boxShadowState?.boxShadow?.horizontal}px ${boxShadowState?.boxShadow?.blurRadius}px ${boxShadowState?.boxShadow?.spreadRadius}px ${boxShadowState?.boxShadow?.color};
+            box-shadow: ${boxShadowState?.boxShadow?.horizontal}px ${boxShadowState?.boxShadow?.vertical}px ${boxShadowState?.boxShadow?.blurRadius}px ${boxShadowState?.boxShadow?.spreadRadius}px ${boxShadowState?.boxShadow?.color};
             background-color: ${boxShadowState?.boxColor};
             border: ${boxShadowState?.border?.size}px solid ${boxShadowState?.border?.color};
             border-radius: ${boxShadowState?.border?.radius}px;
@@ -64,7 +64,7 @@ const BoxShadowCodePreviewBox = ({ boxHeading }) => {
         }
 
         .myBox:hover {
-          box-shadow: ${boxShadowState?.hover?.vertical}px ${boxShadowState?.hover?.horizontal}px ${boxShadowState?.hover?.blurRadius}px ${boxShadowState?.hover?.spreadRadius}px ${boxShadowState?.hover?.color};
+          box-shadow: ${boxShadowState?.hover?.horizontal}px ${boxShadowState?.hover?.vertical}px ${boxShadowState?.hover?.blurRadius}px ${boxShadowState?.hover?.spreadRadius}px ${boxShadowState?.hover?.color};
         }
         `
           : ""}

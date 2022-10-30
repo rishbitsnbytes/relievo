@@ -66,7 +66,7 @@ const BoxShadowCompPreviewBox = () => {
                 fontSize: `${boxShadowState?.font?.size}px`,
                 fontWeight: boxShadowState?.font?.weight,
                 padding: `${boxShadowState?.padding?.vertical}px ${boxShadowState?.padding?.horizontal}px`,
-                boxShadow: `${boxShadowState?.hover?.vertical}px ${boxShadowState?.hover?.horizontal}px ${boxShadowState?.hover?.blurRadius}px ${boxShadowState?.hover?.spreadRadius}px ${boxShadowState?.hover?.color}`,
+                boxShadow: `${boxShadowState?.hover?.horizontal}px ${boxShadowState?.hover?.vertical}px ${boxShadowState?.hover?.blurRadius}px ${boxShadowState?.hover?.spreadRadius}px ${boxShadowState?.hover?.color}`,
               }
             : {
                 backgroundColor: boxShadowState?.boxColor,
@@ -79,7 +79,7 @@ const BoxShadowCompPreviewBox = () => {
                 fontSize: `${boxShadowState?.font?.size}px`,
                 fontWeight: boxShadowState?.font?.weight,
                 padding: `${boxShadowState?.padding?.vertical}px ${boxShadowState?.padding?.horizontal}px`,
-                boxShadow: `${boxShadowState?.boxShadow?.vertical}px ${boxShadowState?.boxShadow?.horizontal}px ${boxShadowState?.boxShadow?.blurRadius}px ${boxShadowState?.boxShadow?.spreadRadius}px ${boxShadowState?.boxShadow?.color}`,
+                boxShadow: `${boxShadowState?.boxShadow?.horizontal}px ${boxShadowState?.boxShadow?.vertical}px ${boxShadowState?.boxShadow?.blurRadius}px ${boxShadowState?.boxShadow?.spreadRadius}px ${boxShadowState?.boxShadow?.color}`,
               }
         }
       >

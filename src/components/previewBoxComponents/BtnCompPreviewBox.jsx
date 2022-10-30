@@ -66,7 +66,7 @@ const BtnCompPreviewBox = () => {
                 fontSize: `${btnState?.font?.size}px`,
                 fontWeight: btnState?.font?.weight,
                 padding: `${btnState?.padding?.vertical}px ${btnState?.padding?.horizontal}px`,
-                boxShadow: `${btnState?.boxShadow?.vertical}px ${btnState?.boxShadow?.horizontal}px ${btnState?.boxShadow?.blurRadius}px ${btnState?.boxShadow?.spreadRadius}px ${btnState?.boxShadow?.color}`,
+                boxShadow: `${btnState?.boxShadow?.horizontal}px ${btnState?.boxShadow?.vertical}px ${btnState?.boxShadow?.blurRadius}px ${btnState?.boxShadow?.spreadRadius}px ${btnState?.boxShadow?.color}`,
               }
             : {
                 backgroundColor: btnState?.buttonColor,
@@ -79,7 +79,7 @@ const BtnCompPreviewBox = () => {
                 fontSize: `${btnState?.font?.size}px`,
                 fontWeight: btnState?.font?.weight,
                 padding: `${btnState?.padding?.vertical}px ${btnState?.padding?.horizontal}px`,
-                boxShadow: `${btnState?.boxShadow?.vertical}px ${btnState?.boxShadow?.horizontal}px ${btnState?.boxShadow?.blurRadius}px ${btnState?.boxShadow?.spreadRadius}px ${btnState?.boxShadow?.color}`,
+                boxShadow: `${btnState?.boxShadow?.horizontal}px ${btnState?.boxShadow?.vertical}px ${btnState?.boxShadow?.blurRadius}px ${btnState?.boxShadow?.spreadRadius}px ${btnState?.boxShadow?.color}`,
               }
         }
       >

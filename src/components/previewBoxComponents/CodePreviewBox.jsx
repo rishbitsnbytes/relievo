@@ -56,7 +56,7 @@ const CodePreviewBox = ({ boxHeading }) => {
           ? `<button class="myButton" >${btnState?.buttonText}</button>`
           : boxHeading === "CSS"
           ? `.myButton {
-            box-shadow: ${btnState?.boxShadow?.vertical}px ${btnState?.boxShadow?.horizontal}px ${btnState?.boxShadow?.blurRadius}px ${btnState?.boxShadow?.spreadRadius}px ${btnState?.boxShadow?.color};
+            box-shadow: ${btnState?.boxShadow?.horizontal}px ${btnState?.boxShadow?.vertical}px ${btnState?.boxShadow?.blurRadius}px ${btnState?.boxShadow?.spreadRadius}px ${btnState?.boxShadow?.color};
             background-color: ${btnState?.buttonColor};
             border: ${btnState?.border?.size}px solid ${btnState?.border?.color};
             border-radius: ${btnState?.border?.radius}px;
