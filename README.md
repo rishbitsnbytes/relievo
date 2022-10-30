@@ -10,6 +10,11 @@ A Dynamic Component Library which relieves developer's pain related to component
 - ReactJs
 - Material UI
 
+## Glimpse:
+
+![image](https://user-images.githubusercontent.com/82696858/198863803-4d31726c-6ed1-41bc-87e7-c98c1aeb7d70.png)
+
+
 ## Contribution guidlines<a name="contribution"></a>
 For contributing to expeditech UI,
 1. Clone & Fork the repo.
