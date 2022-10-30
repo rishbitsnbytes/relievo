@@ -4,34 +4,34 @@ import { btnReducerFunction } from "reducers";
 const initialBtnState = {
   buttonId: "",
   buttonText: "Primary",
-  buttonColor: "#44c767",
+  buttonColor: "#6a6696",
   bgColor: "#212121",
   font: {
-    type: "Arial",
+    type: "Gruppo",
     color: "#ffffff",
-    size: 15,
-    weight: 600,
+    size: 20,
+    weight: 400,
   },
   border: {
     size: 1,
-    color: "#18ab29",
-    radius: 25,
+    color: "#6a6696",
+    radius: 1,
   },
   padding: {
-    vertical: 16,
-    horizontal: 31,
+    vertical: 15,
+    horizontal: 30,
   },
   boxShadow: {
-    vertical: 1,
-    horizontal: 1,
-    blurRadius: 5,
+    vertical: 0,
+    horizontal: 0,
+    blurRadius: 2,
     spreadRadius: 1,
-    color: "#44c767",
+    color: "#d7d7d9",
   },
   hover: {
-    buttonColor: "#5cbf2a",
+    buttonColor: "#5c4f8c",
     fontColor: "#ffffff",
-    borderColor: "#18ab29",
+    borderColor: "#6a6696",
   },
 };
 
