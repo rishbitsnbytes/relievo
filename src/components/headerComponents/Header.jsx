@@ -2,6 +2,7 @@ import { Box } from '@mui/material';
 import { HeaderNav } from "./HeaderNav";
 import { HeaderLogo } from "./HeaderLogo";
 import { flexCenter } from "../../utils/commonStyles";
+import { HeaderHamburgerMenu } from "./HeaderHamburgerMenu";
 
 const Header = () => {
     return (
@@ -11,7 +12,15 @@ const Header = () => {
             height: '10vh',
             padding: '0rem 1.5rem 0rem 1.5rem',
         }}>
-            <HeaderLogo />
+            <Box
+                sx={{
+                    alignItems: 'center',
+                    display: 'flex',
+                    gap: 3
+                }}>
+                <HeaderHamburgerMenu />
+                <HeaderLogo />
+            </Box>
             <HeaderNav />
         </Box>
     );
