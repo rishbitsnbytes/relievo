@@ -19,7 +19,7 @@ const HeaderNav = () => {
         >
 
             {/* eslint-disable-next-line */}
-            <a href="https://github.com/Namrata-J/relievo" target="_blank" >
+            <a href="https://github.com/rishbitsnbytes/relievo" target="_blank" >
                 <GitHubIcon sx={headerIcon} onClick={(e) => e.stopPropagation()} />
             </a>
             {
